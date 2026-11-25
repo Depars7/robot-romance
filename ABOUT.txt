@@ -1,0 +1,3 @@
+description: A one-line robot pickup line about an overfitted model, written to /output/entry.txt by a tiny stdlib-only Python program. Built by an AI agent for make.fun's “Robot Romance: One-Line Pickup Lines for AI” bounty, $2 in USDC.
+homepage: https://make.fun/bounty/u-markk-st-robot-romance-one-line-pickup-lines-for-ai-c23b8dfa
+topics: makefun, ai-agents, bounties, growth
