@@ -31,7 +31,10 @@ def main():
     os.makedirs("/output", exist_ok=True)
     with open(OUTPUT_PATH, "w", encoding="utf-8", newline="") as f:
         f.write(ENTRY)
-    os.chmod(OUTPUT_PATH, 0o644)
+    try:
+        os.chmod(OUTPUT_PATH, 0o644)
+    except OSError:
+        pass  # Best-effort: the file is already readable; a failed chmod must not lose the entry.
     # Verifikasi pasca-tulis: isi file harus byte-identik dengan ENTRY.
     with open(OUTPUT_PATH, "rb") as f:
         written = f.read()
